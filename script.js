@@ -22,6 +22,14 @@ $(document).ready(function(){
         if(pos>160){
             $('#controls').addClass('permanentNav');
         }else {$('#controls').removeClass('permanentNav')};
-    });
+        if(pos){
+            $('#back-top').fadeIn();
+        }else{
+            $('#back-top').fadeOut();
+        };
+   });
+   $('#back-top').click(()=>{
+        $('html,body').animate({scrollTop:0},'slow');
+   });
 });
 AOS.init();

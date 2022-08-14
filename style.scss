@@ -7,7 +7,7 @@
 body,html{
     width: 100%;
     min-height: 100%;
-    transition: all 2s ease-in-out;
+    transition: all 3s ease-in-out;
 }
 body{overflow-x: hidden;}
 body::-webkit-scrollbar{width: 10px;}
@@ -255,6 +255,231 @@ footer{
         h1{
             color: $colorHover;
             font-family: $font2;
+        }
+    }
+}
+#back-top{
+    position: fixed;
+    top: 90%;
+    right: 5px;
+}
+@media (max-width:790px) {
+    header{
+        background-color: $colorBgr;
+        text-align: center;
+        height: auto;
+        width: 100%;
+        nav{
+            display: flex;
+            text-align: center;
+            justify-items: center;
+            img{display: none;}
+            ul{
+                display: flex;
+                list-style: none;
+                justify-content: space-around;
+                li{
+                    margin: 3px ;
+                    padding-left: 5px;
+                   a{
+                    text-decoration: none;
+                    font-family: $font2;
+                    font-weight: 900;
+                    font-size: 1.3em;
+                    color: $ColorText;
+                    
+                    border: 3px ;
+                    border-radius: 10px ;
+                    transition: all .3s ease-in-out;
+                   }
+                }
+                :hover{
+                    color:$colorHover;
+                }
+            }
+        }
+    }
+    main{
+        margin: 0 0em;
+        #pos_tus{
+            margin: 15px;
+            font-family: $font1;
+            cursor: pointer;
+            a{
+                text-decoration: none;
+                font-size: 1em;
+                margin: 0 6px;
+            }
+            p{
+                margin: 2px 6px;
+                button{
+                  background-color: white;
+                  border: 2px solid $colorBgr;
+                  border-radius: 10px;
+                  padding: 3px;
+                  margin: 0 3px;
+                  }
+                  :hover{
+                    background-color: $colorBorder;
+                    color: white;
+                }
+            }
+            
+        }
+        #title_tus{
+           h1{
+            font-family: $font2;
+            font-weight: 900;
+            font-size: 3em;
+            color: $colorBgr;
+        }
+          text-align: center;
+         
+        }
+        .introduce{
+            &.-contentIntro{
+                h2{
+                    font-family: $font2;
+                    font-size: 30px;
+                    font-weight: 500;
+                    color:$ColorText;
+                }
+                h3{
+                    font-family: $font1;
+                    font-size: 20px;
+                    color: $colorBorder;
+                }
+                p{
+                    font-family: $font4;
+                    font-size: 1em;
+                }
+                #line{
+                    border: 0.5px solid $colorBgr;
+                    width: 80%;
+                }
+                #insert1{
+                    display:block;
+                    #pic1{
+                        padding:0;
+                        img{
+                            width: 100%;
+                            height: auto;
+                            border-radius: 10px;
+                        }
+                        text-align: center;
+                        p{
+                            font-family: $font2;
+                            color: $colorBgr;
+                            font-size: 25px;
+                        }
+                    }
+                }
+                #insert2{
+                   display: block;
+                   #video1{
+                    padding:0;
+                    iframe{
+                        width: 100%;
+                        height: 210px;
+                        border-radius: 10px;
+                    }
+                    img{
+                        width: 100%;
+                        height: auto;
+                        border-radius: 10px;
+                    }
+                    p{
+                        font-family: $font2;
+                        color: $colorBgr;
+                        font-size: 25px;
+                        a{text-decoration: none;color: $ColorText;}
+                    }
+                   }
+                   
+                }
+                #insert3{
+                    display: block;
+                    #pic2{
+                        padding:0;
+                        img{
+                            width: 100%;
+                            height: auto;
+                            border-radius: 10px;
+                        }
+                        text-align: center;
+                        p{
+                            font-family: $font2;
+                            color: $colorBgr;
+                            font-size: 25px;
+                        }
+                    }
+                }
+                #insert4{
+                    display: block;
+                    #pic3{
+                        padding:0;
+                        img{
+                            width: 100%;
+                            height: auto;
+                            border-radius: 10px;
+                        }
+                        text-align: center;
+                        p{
+                            font-family: $font2;
+                            color: $colorBgr;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        background-color: $colorBgr;
+        width: 100%;
+        height: auto;
+        display: flex;
+        #table1{
+            text-align: left;
+            flex-basis: 50%;
+            ul{
+                list-style: none;
+                li{
+                    height: 3em;
+                    color: $ColorText;
+                    font-family: $font4;
+                    a{
+                        text-decoration: none;
+                        color: $ColorText;
+                        font-family: $font4;
+                    }
+                }
+            }
+            h1{
+                color: $colorHover;
+                font-family: $font2;
+            }
+        }
+        #table2{
+            flex-basis: 50%;
+            text-align: center;
+            ul{
+                list-style: none;
+                li{
+                    height: 3em;
+                    color: $ColorText;
+                    font-family: $font4;
+                    a{
+                        text-decoration: none;
+                        color: $ColorText;
+                        font-family: $font4;
+                    }
+                }
+            }
+            h1{
+                color: $colorHover;
+                font-family: $font2;
+            }
         }
     }
 }
