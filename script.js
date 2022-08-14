@@ -10,6 +10,7 @@ $(document).ready(function(){
     $('#yes').click(()=>{
         playMusic();
         $('#suggest').css({'display':'none'});
+        alert('Nếu muốn tắt nhạc thì bấm mũi tên hoặc logo VietNam-Tourism nếu ở thiết bị lớn nhá.Thanks.')
     });
     $('#no').click(()=>{
         $('#suggest').css({'display':'none'});
@@ -30,6 +31,8 @@ $(document).ready(function(){
    });
    $('#back-top').click(()=>{
         $('html,body').animate({scrollTop:0},'slow');
+        stopMusic();
+        $('#suggest').css({'display':'block'});
    });
 });
 AOS.init();
