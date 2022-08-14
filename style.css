@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Open+Sans:ital,wght@0,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100%;
+  min-height: 100%;
+  transition: all 2s ease-in-out;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #001D6E, rgb(250, 47, 181));
+  border-radius: 20px;
+}
+
+.permanentNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #001D6E;
+}
+
+header {
+  background-color: #001D6E;
+  text-align: center;
+  height: auto;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  justify-items: center;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  margin: 12px;
+  padding: 10px;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-family: "Dancing Script", cursive;
+  font-weight: 900;
+  font-size: 1.8em;
+  color: rgb(250, 47, 181);
+  border: 3px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+header nav ul :hover {
+  color: rgb(255, 194, 60);
+}
+
+main {
+  margin: 0 10em;
+}
+main #pos_tus {
+  margin: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+}
+main #pos_tus a {
+  text-decoration: none;
+  font-size: 1.1em;
+  margin: 0 6px;
+}
+main #pos_tus p {
+  margin: 2px 6px;
+}
+main #pos_tus p button {
+  background-color: white;
+  border: 2px solid #001D6E;
+  border-radius: 10px;
+  padding: 3px;
+  margin: 0 3px;
+}
+main #pos_tus p :hover {
+  background-color: rgb(49, 8, 123);
+  color: white;
+}
+main #title_tus {
+  text-align: center;
+}
+main #title_tus h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 900;
+  font-size: 4.5em;
+  color: #001D6E;
+}
+main .introduce.-contentIntro h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(250, 47, 181);
+}
+main .introduce.-contentIntro h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+  color: rgb(49, 8, 123);
+}
+main .introduce.-contentIntro p {
+  font-family: "verdana";
+  font-size: 1.2em;
+}
+main .introduce.-contentIntro #line {
+  border: 0.5px solid #001D6E;
+  width: 80%;
+}
+main .introduce.-contentIntro #insert1 {
+  display: flex;
+}
+main .introduce.-contentIntro #insert1 #line1 {
+  flex-basis: 60%;
+}
+main .introduce.-contentIntro #insert1 #pic1 {
+  padding-left: 10px;
+  padding-top: 30px;
+  flex-basis: 40%;
+  text-align: center;
+}
+main .introduce.-contentIntro #insert1 #pic1 img {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+main .introduce.-contentIntro #insert1 #pic1 p {
+  font-family: "Dancing Script", cursive;
+  color: #001D6E;
+  font-size: 25px;
+}
+main .introduce.-contentIntro #insert2 {
+  display: flex;
+}
+main .introduce.-contentIntro #insert2 #video1 {
+  padding-top: 20px;
+  padding-right: 10px;
+  flex-basis: 40%;
+}
+main .introduce.-contentIntro #insert2 #video1 iframe {
+  width: 600px;
+  height: 340px;
+  border-radius: 10px;
+}
+main .introduce.-contentIntro #insert2 #video1 img {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+main .introduce.-contentIntro #insert2 #video1 p {
+  font-family: "Dancing Script", cursive;
+  color: #001D6E;
+  font-size: 25px;
+}
+main .introduce.-contentIntro #insert2 #video1 p a {
+  text-decoration: none;
+  color: rgb(250, 47, 181);
+}
+main .introduce.-contentIntro #insert2 #line2 {
+  flex-basis: 60%;
+}
+main .introduce.-contentIntro #insert3 {
+  display: flex;
+}
+main .introduce.-contentIntro #insert3 #line3 {
+  flex-basis: 60%;
+}
+main .introduce.-contentIntro #insert3 #pic2 {
+  padding-top: 40px;
+  padding-left: 10px;
+  flex-basis: 40%;
+  text-align: center;
+}
+main .introduce.-contentIntro #insert3 #pic2 img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+main .introduce.-contentIntro #insert3 #pic2 p {
+  font-family: "Dancing Script", cursive;
+  color: #001D6E;
+  font-size: 25px;
+}
+main .introduce.-contentIntro #insert4 {
+  display: flex;
+}
+main .introduce.-contentIntro #insert4 #line4 {
+  flex-basis: 60%;
+}
+main .introduce.-contentIntro #insert4 #pic3 {
+  padding-right: 20px;
+  flex-basis: 40%;
+  text-align: center;
+}
+main .introduce.-contentIntro #insert4 #pic3 img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+main .introduce.-contentIntro #insert4 #pic3 p {
+  font-family: "Dancing Script", cursive;
+  color: #001D6E;
+  font-size: 25px;
+}
+
+footer {
+  background-color: #001D6E;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+footer #table1 {
+  text-align: center;
+  flex-basis: 50%;
+}
+footer #table1 ul {
+  list-style: none;
+}
+footer #table1 ul li {
+  height: 3em;
+  color: rgb(250, 47, 181);
+  font-family: "verdana";
+}
+footer #table1 ul li a {
+  text-decoration: none;
+  color: rgb(250, 47, 181);
+  font-family: "verdana";
+}
+footer #table1 h1 {
+  color: rgb(255, 194, 60);
+  font-family: "Dancing Script", cursive;
+}
+footer #table2 {
+  flex-basis: 50%;
+  text-align: center;
+}
+footer #table2 ul {
+  list-style: none;
+}
+footer #table2 ul li {
+  height: 3em;
+  color: rgb(250, 47, 181);
+  font-family: "verdana";
+}
+footer #table2 ul li a {
+  text-decoration: none;
+  color: rgb(250, 47, 181);
+  font-family: "verdana";
+}
+footer #table2 h1 {
+  color: rgb(255, 194, 60);
+  font-family: "Dancing Script", cursive;
+}
+
+/*# sourceMappingURL=style.css.map */

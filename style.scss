@@ -1,0 +1,260 @@
+@import "_variables.scss";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Open+Sans:ital,wght@0,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    width: 100%;
+    min-height: 100%;
+    transition: all 2s ease-in-out;
+}
+body{overflow-x: hidden;}
+body::-webkit-scrollbar{width: 10px;}
+body::-webkit-scrollbar-thumb{
+        background:linear-gradient(45deg,#001D6E,rgb(250, 47, 181));
+        border-radius: 20px;
+    }
+
+.permanentNav{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: $colorBgr;
+}
+header{
+    background-color: $colorBgr;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    nav{
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        justify-items: center;
+        ul{
+            display: flex;
+            list-style: none;
+            li{
+                margin: 12px ;
+                padding: 10px;
+               a{
+                text-decoration: none;
+                font-family: $font2;
+                font-weight: 900;
+                font-size: 1.8em;
+                color: $ColorText;
+                
+                border: 3px ;
+                border-radius: 10px ;
+                transition: all .3s ease-in-out;
+               }
+            }
+            :hover{
+                color:$colorHover;
+            }
+        }
+    }
+}
+main{
+    margin: 0 10em;
+    #pos_tus{
+        margin: 15px;
+        font-family: $font1;
+        cursor: pointer;
+        a{
+            text-decoration: none;
+            font-size: 1.1em;
+            margin: 0 6px;
+        }
+        p{
+            margin: 2px 6px;
+            button{
+              background-color: white;
+              border: 2px solid $colorBgr;
+              border-radius: 10px;
+              padding: 3px;
+              margin: 0 3px;
+              }
+              :hover{
+                background-color: $colorBorder;
+                color: white;
+            }
+        }
+        
+    }
+    #title_tus{
+       h1{
+        font-family: $font2;
+        font-weight: 900;
+        font-size: 4.5em;
+        color: $colorBgr;
+    }
+      text-align: center;
+     
+    }
+    .introduce{
+        &.-contentIntro{
+            h2{
+                font-family: $font2;
+                font-size: 40px;
+                font-weight: 500;
+                color:$ColorText;
+            }
+            h3{
+                font-family: $font1;
+                font-size: 30px;
+                color: $colorBorder;
+            }
+            p{
+                font-family: $font4;
+                font-size: 1.2em;
+            }
+            #line{
+                border: 0.5px solid $colorBgr;
+                width: 80%;
+            }
+            #insert1{
+                display: flex;
+                #line1{
+                    flex-basis: 60%;
+                }
+                #pic1{
+                    padding-left: 10px;
+                    padding-top: 30px;
+                    flex-basis: 40%;
+                    img{
+                        width: 600px;
+                        height: auto;
+                        border-radius: 10px;
+                    }
+                    text-align: center;
+                    p{
+                        font-family: $font2;
+                        color: $colorBgr;
+                        font-size: 25px;
+                    }
+                }
+            }
+            #insert2{
+               display: flex;
+               #video1{
+                padding-top: 20px;
+                padding-right: 10px;
+                flex-basis: 40%;
+                iframe{
+                    width: 600px;
+                    height: 340px;
+                    border-radius: 10px;
+                }
+                img{
+                    width: 600px;
+                    height: auto;
+                    border-radius: 10px;
+                }
+                p{
+                    font-family: $font2;
+                    color: $colorBgr;
+                    font-size: 25px;
+                    a{text-decoration: none;color: $ColorText;}
+                }
+               }
+               #line2{
+                flex-basis: 60%;
+               }
+            }
+            #insert3{
+                display: flex;
+                #line3{
+                    flex-basis: 60%;
+                }
+                #pic2{
+                    padding-top: 40px;
+                    padding-left: 10px;
+                    flex-basis: 40%;
+                    img{
+                        width: 500px;
+                        height: auto;
+                        border-radius: 10px;
+                    }
+                    text-align: center;
+                    p{
+                        font-family: $font2;
+                        color: $colorBgr;
+                        font-size: 25px;
+                    }
+                }
+            }
+            #insert4{
+                display: flex;
+                #line4{
+                    flex-basis: 60%;
+                }
+                #pic3{
+                    padding-right: 20px;
+                    flex-basis: 40%;
+                    img{
+                        width: 500px;
+                        height: auto;
+                        border-radius: 10px;
+                    }
+                    text-align: center;
+                    p{
+                        font-family: $font2;
+                        color: $colorBgr;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+footer{
+    background-color: $colorBgr;
+    width: 100%;
+    height: auto;
+    display: flex;
+    #table1{
+        text-align: center;
+        flex-basis: 50%;
+        ul{
+            list-style: none;
+            li{
+                height: 3em;
+                color: $ColorText;
+                font-family: $font4;
+                a{
+                    text-decoration: none;
+                    color: $ColorText;
+                    font-family: $font4;
+                }
+            }
+        }
+        h1{
+            color: $colorHover;
+            font-family: $font2;
+        }
+    }
+    #table2{
+        flex-basis: 50%;
+        text-align: center;
+        ul{
+            list-style: none;
+            li{
+                height: 3em;
+                color: $ColorText;
+                font-family: $font4;
+                a{
+                    text-decoration: none;
+                    color: $ColorText;
+                    font-family: $font4;
+                }
+            }
+        }
+        h1{
+            color: $colorHover;
+            font-family: $font2;
+        }
+    }
+}
