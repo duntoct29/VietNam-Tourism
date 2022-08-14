@@ -7,6 +7,10 @@ var stopMusic=()=>{
     music.pause();
 };
 $(document).ready(function(){
+    var width=$(window).width();
+    if(width<=790){
+        alert('Website chưa responsive ở chế độ Desktop site nên khi dùng trên thiết bị nhỏ vui lòng để chế độ bình thường. Cảm ơn ')
+    };
     $('#yes').click(()=>{
         playMusic();
         $('#suggest').css({'display':'none'});
