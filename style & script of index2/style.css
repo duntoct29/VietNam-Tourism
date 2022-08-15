@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Open+Sans:ital,wght@0,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #001D6E, rgb(250, 47, 181));
+  border-radius: 20px;
+}
+
+.permanentNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #001D6E;
+}
+
+header {
+  background-color: #001D6E;
+  text-align: center;
+  height: auto;
+  width: 100%;
+}
+header nav {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  justify-items: center;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul li {
+  margin: 12px;
+  padding: 10px;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-family: "Dancing Script", cursive;
+  font-weight: 900;
+  font-size: 1.8em;
+  color: rgb(250, 47, 181);
+  border: 3px;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+header nav ul :hover {
+  color: rgb(255, 194, 60);
+}
+
+main {
+  transition: all 5s ease-in-out;
+  margin: 0 10em;
+}
+
+/*# sourceMappingURL=style.css.map */
