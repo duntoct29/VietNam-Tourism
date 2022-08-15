@@ -58,6 +58,19 @@ header{
 main{
     transition: all 5s ease-in-out;
     margin: 0 10em;
+        #pos_tus{
+            #discover{
+                color: #001D6E
+            };
+            margin: 15px;
+            font-family: $font1b;
+            cursor: pointer;
+            a{
+                text-decoration: none;
+                font-size: 1.1em;
+                margin: 0 6px;
+            }
+        }
         #title_tus{
             h1{
              font-family:$font2b;

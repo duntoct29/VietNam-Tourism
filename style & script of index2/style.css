@@ -68,6 +68,19 @@ main {
   transition: all 5s ease-in-out;
   margin: 0 10em;
 }
+main #pos_tus {
+  margin: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+}
+main #pos_tus #discover {
+  color: #001D6E;
+}
+main #pos_tus a {
+  text-decoration: none;
+  font-size: 1.1em;
+  margin: 0 6px;
+}
 main #title_tus {
   text-align: center;
 }
