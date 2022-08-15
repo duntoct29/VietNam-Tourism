@@ -61,6 +61,9 @@ main{
     transition: all 5s ease-in-out;
     margin: 0 10em;
     #pos_tus{
+        #home{
+            color: #001D6E
+        };
         margin: 15px;
         font-family: $font1;
         cursor: pointer;
@@ -266,7 +269,190 @@ footer{
     top: 90%;
     right: 5px;
 }
+#darkMode{
+    border: 2px solid $colorBgr;
+    border-radius: 20px;
+    width: 4%;
+    position: fixed;
+    top: 80%;
+    right: 0%;
+    text-align: left;
+    background-color: black;
+    transform: rotateZ(90deg);
+    button{
+        cursor: pointer;
+        background-color: $colorHover;
+        border: 1.1em solid $colorHover;
+        border-radius: 100%;
+    }
+}
+.main_dark{
+    transition: all 5s ease-in-out;
+    margin: 0 10em;
+    #pos_tus{
+        color: white;
+        #home{
+            color: yellow;
+        };
+        margin: 15px;
+        font-family: $font1;
+        cursor: pointer;
+        a{
+            text-decoration: none;
+            font-size: 1.1em;
+            margin: 0 6px;
+            color: white;
+        }
+        p{
+            color: white;
+            margin: 2px 6px;
+            button{
+              background-color: white;
+              border: 2px solid $colorBgr;
+              border-radius: 10px;
+              padding: 3px;
+              margin: 0 3px;
+              }
+              :hover{
+                background-color: $colorBorder;
+                color: white;
+            }
+        }
+        
+    }
+    #title_tus{
+       h1{
+        font-family: $font2;
+        font-weight: 900;
+        font-size: 4.5em;
+        color: $colorHover;
+    }
+      text-align: center;
+     
+    }
+    .introduce{
+        &.-contentIntro{
+            h2{
+                font-family: $font2;
+                font-size: 40px;
+                font-weight: 500;
+                color:$ColorText;
+            }
+            h3{
+                font-family: $font1;
+                font-size: 30px;
+                color: rgba(5, 255, 5, 0.875);
+            }
+            p{
+                font-family: $font4;
+                font-size: 1.2em;
+                color: wheat;
+            }
+            #line{
+                border: 0.5px solid $colorBgr;
+                width: 80%;
+            }
+            #insert1{
+                display: flex;
+                #line1{
+                    flex-basis: 60%;
+                }
+                #pic1{
+                    padding-left: 10px;
+                    padding-top: 30px;
+                    flex-basis: 40%;
+                    img{
+                        width: 600px;
+                        height: auto;
+                        border-radius: 10px;
+                    }
+                    text-align: center;
+                    p{
+                        font-family: $font2;
+                        color:$ColorText;
+                        font-size: 25px;
+                    }
+                }
+            }
+            #insert2{
+               display: flex;
+               #video1{
+                padding-top: 20px;
+                padding-right: 10px;
+                flex-basis: 40%;
+                iframe{
+                    width: 600px;
+                    height: 340px;
+                    border-radius: 10px;
+                }
+                img{
+                    width: 600px;
+                    height: auto;
+                    border-radius: 10px;
+                }
+                p{
+                    font-family: $font2;
+                    color:$ColorText;
+                    font-size: 25px;
+                    a{text-decoration: none;color: $ColorText;}
+                }
+               }
+               #line2{
+                flex-basis: 60%;
+               }
+            }
+            #insert3{
+                display: flex;
+                #line3{
+                    flex-basis: 60%;
+                }
+                #pic2{
+                    padding-top: 40px;
+                    padding-left: 10px;
+                    flex-basis: 40%;
+                    img{
+                        width: 500px;
+                        height: auto;
+                        border-radius: 10px;
+                    }
+                    text-align: center;
+                    p{
+                        font-family: $font2;
+                        color:$ColorText;
+                        font-size: 25px;
+                    }
+                }
+            }
+            #insert4{
+                display: flex;
+                #line4{
+                    flex-basis: 60%;
+                }
+                #pic3{
+                    padding-right: 20px;
+                    flex-basis: 40%;
+                    img{
+                        width: 500px;
+                        height: auto;
+                        border-radius: 10px;
+                    }
+                    text-align: center;
+                    p{
+                        font-family: $font2;
+                        color:$ColorText;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
 @media (max-width:790px) {
+    #darkMode{
+        top: 80%;
+        right: 0;
+        width: 15%;
+    }
     header{
         background-color: $colorBgr;
         text-align: center;
@@ -436,6 +622,142 @@ footer{
                 }
             }
         }
+    }
+    .main_dark{
+            margin: 0 0em;
+            #pos_tus{
+                margin: 15px;
+                font-family: $font1;
+                cursor: pointer;
+                a{
+                    text-decoration: none;
+                    font-size: 1em;
+                    margin: 0 6px;
+                }
+                p{
+                    margin: 2px 6px;
+                    button{
+                      background-color: white;
+                      border: 2px solid $colorBgr;
+                      border-radius: 10px;
+                      padding: 3px;
+                      margin: 0 3px;
+                      }
+                      :hover{
+                        background-color: $colorBorder;
+                        color: white;
+                    }
+                }
+                
+            }
+            #title_tus{
+               h1{
+                font-family: $font2;
+                font-weight: 900;
+                font-size: 3em;
+                color: $colorHover;
+            }
+              text-align: center;
+             
+            }
+            .introduce{
+                &.-contentIntro{
+                    h2{
+                        font-family: $font2;
+                        font-size: 30px;
+                        font-weight: 500;
+                        color:$ColorText;
+                    }
+                    h3{
+                        font-family: $font1;
+                        font-size: 20px;
+                        color: rgba(5, 255, 5, 0.875);
+                    }
+                    p{
+                        font-family: $font4;
+                        font-size: 1em;
+                    }
+                    #line{
+                        border: 0.5px solid $colorBgr;
+                        width: 80%;
+                    }
+                    #insert1{
+                        display:block;
+                        #pic1{
+                            padding:0;
+                            img{
+                                width: 100%;
+                                height: auto;
+                                border-radius: 10px;
+                            }
+                            text-align: center;
+                            p{
+                                font-family: $font2;
+                                color:$ColorText;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    #insert2{
+                       display: block;
+                       #video1{
+                        padding:0;
+                        iframe{
+                            width: 100%;
+                            height: 210px;
+                            border-radius: 10px;
+                        }
+                        img{
+                            width: 100%;
+                            height: auto;
+                            border-radius: 10px;
+                        }
+                        p{
+                            font-family: $font2;
+                            color:$ColorText;
+                            font-size: 20px;
+                            a{text-decoration: none;color: $ColorText;}
+                        }
+                       }
+                       
+                    }
+                    #insert3{
+                        display: block;
+                        #pic2{
+                            padding:0;
+                            img{
+                                width: 100%;
+                                height: auto;
+                                border-radius: 10px;
+                            }
+                            text-align: center;
+                            p{
+                                font-family: $font2;
+                                color:$ColorText;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    #insert4{
+                        display: block;
+                        #pic3{
+                            padding:0;
+                            img{
+                                width: 100%;
+                                height: auto;
+                                border-radius: 10px;
+                            }
+                            text-align: center;
+                            p{
+                                font-family: $font2;
+                                color:$ColorText;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+    
     }
     footer{
         background-color: $colorBgr;

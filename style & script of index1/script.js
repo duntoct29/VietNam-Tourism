@@ -38,5 +38,25 @@ $(document).ready(function(){
         stopMusic();
         $('#suggest').css({'display':'block'});
    });
+   var value_circle = 2;
+   $('#darkMode').click(()=>{
+            if(value_circle%2==0){
+                $('#darkMode').css({
+                'text-align': 'right',
+                'background-color':'white'
+                });
+                $('html').css({ 'background-color': 'rgb(25, 24, 24)'});
+                $('.main').addClass('main_dark');
+                value_circle++;
+            }else{
+                $('#darkMode').css({
+                    'text-align': 'left',
+                    'background-color':'black'
+                });
+                $('html').css({ 'background-color': 'white'});
+                $('.main').removeClass('main_dark');
+                value_circle++;
+             };
+   });
 });
 AOS.init();

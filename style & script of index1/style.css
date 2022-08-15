@@ -75,6 +75,9 @@ main #pos_tus {
   font-family: "Josefin Sans", sans-serif;
   cursor: pointer;
 }
+main #pos_tus #home {
+  color: #001D6E;
+}
 main #pos_tus a {
   text-decoration: none;
   font-size: 1.1em;
@@ -275,7 +278,189 @@ footer #table2 h1 {
   right: 5px;
 }
 
+#darkMode {
+  border: 2px solid #001D6E;
+  border-radius: 20px;
+  width: 4%;
+  position: fixed;
+  top: 80%;
+  right: 0%;
+  text-align: left;
+  background-color: black;
+  transform: rotateZ(90deg);
+}
+#darkMode button {
+  cursor: pointer;
+  background-color: rgb(255, 194, 60);
+  border: 1.1em solid rgb(255, 194, 60);
+  border-radius: 100%;
+}
+
+.main_dark {
+  transition: all 5s ease-in-out;
+  margin: 0 10em;
+}
+.main_dark #pos_tus {
+  color: white;
+  margin: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+}
+.main_dark #pos_tus #home {
+  color: yellow;
+}
+.main_dark #pos_tus a {
+  text-decoration: none;
+  font-size: 1.1em;
+  margin: 0 6px;
+  color: white;
+}
+.main_dark #pos_tus p {
+  color: white;
+  margin: 2px 6px;
+}
+.main_dark #pos_tus p button {
+  background-color: white;
+  border: 2px solid #001D6E;
+  border-radius: 10px;
+  padding: 3px;
+  margin: 0 3px;
+}
+.main_dark #pos_tus p :hover {
+  background-color: rgb(49, 8, 123);
+  color: white;
+}
+.main_dark #title_tus {
+  text-align: center;
+}
+.main_dark #title_tus h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 900;
+  font-size: 4.5em;
+  color: rgb(255, 194, 60);
+}
+.main_dark .introduce.-contentIntro h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(250, 47, 181);
+}
+.main_dark .introduce.-contentIntro h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;
+  color: rgba(5, 255, 5, 0.875);
+}
+.main_dark .introduce.-contentIntro p {
+  font-family: "verdana";
+  font-size: 1.2em;
+  color: wheat;
+}
+.main_dark .introduce.-contentIntro #line {
+  border: 0.5px solid #001D6E;
+  width: 80%;
+}
+.main_dark .introduce.-contentIntro #insert1 {
+  display: flex;
+}
+.main_dark .introduce.-contentIntro #insert1 #line1 {
+  flex-basis: 60%;
+}
+.main_dark .introduce.-contentIntro #insert1 #pic1 {
+  padding-left: 10px;
+  padding-top: 30px;
+  flex-basis: 40%;
+  text-align: center;
+}
+.main_dark .introduce.-contentIntro #insert1 #pic1 img {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+.main_dark .introduce.-contentIntro #insert1 #pic1 p {
+  font-family: "Dancing Script", cursive;
+  color: rgb(250, 47, 181);
+  font-size: 25px;
+}
+.main_dark .introduce.-contentIntro #insert2 {
+  display: flex;
+}
+.main_dark .introduce.-contentIntro #insert2 #video1 {
+  padding-top: 20px;
+  padding-right: 10px;
+  flex-basis: 40%;
+}
+.main_dark .introduce.-contentIntro #insert2 #video1 iframe {
+  width: 600px;
+  height: 340px;
+  border-radius: 10px;
+}
+.main_dark .introduce.-contentIntro #insert2 #video1 img {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+.main_dark .introduce.-contentIntro #insert2 #video1 p {
+  font-family: "Dancing Script", cursive;
+  color: rgb(250, 47, 181);
+  font-size: 25px;
+}
+.main_dark .introduce.-contentIntro #insert2 #video1 p a {
+  text-decoration: none;
+  color: rgb(250, 47, 181);
+}
+.main_dark .introduce.-contentIntro #insert2 #line2 {
+  flex-basis: 60%;
+}
+.main_dark .introduce.-contentIntro #insert3 {
+  display: flex;
+}
+.main_dark .introduce.-contentIntro #insert3 #line3 {
+  flex-basis: 60%;
+}
+.main_dark .introduce.-contentIntro #insert3 #pic2 {
+  padding-top: 40px;
+  padding-left: 10px;
+  flex-basis: 40%;
+  text-align: center;
+}
+.main_dark .introduce.-contentIntro #insert3 #pic2 img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+.main_dark .introduce.-contentIntro #insert3 #pic2 p {
+  font-family: "Dancing Script", cursive;
+  color: rgb(250, 47, 181);
+  font-size: 25px;
+}
+.main_dark .introduce.-contentIntro #insert4 {
+  display: flex;
+}
+.main_dark .introduce.-contentIntro #insert4 #line4 {
+  flex-basis: 60%;
+}
+.main_dark .introduce.-contentIntro #insert4 #pic3 {
+  padding-right: 20px;
+  flex-basis: 40%;
+  text-align: center;
+}
+.main_dark .introduce.-contentIntro #insert4 #pic3 img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+.main_dark .introduce.-contentIntro #insert4 #pic3 p {
+  font-family: "Dancing Script", cursive;
+  color: rgb(250, 47, 181);
+  font-size: 25px;
+}
+
 @media (max-width: 790px) {
+  #darkMode {
+    top: 80%;
+    right: 0;
+    width: 15%;
+  }
   header {
     background-color: #001D6E;
     text-align: center;
@@ -441,6 +626,137 @@ footer #table2 h1 {
   main .introduce.-contentIntro #insert4 #pic3 p {
     font-family: "Dancing Script", cursive;
     color: #001D6E;
+    font-size: 20px;
+  }
+  .main_dark {
+    margin: 0 0em;
+  }
+  .main_dark #pos_tus {
+    margin: 15px;
+    font-family: "Josefin Sans", sans-serif;
+    cursor: pointer;
+  }
+  .main_dark #pos_tus a {
+    text-decoration: none;
+    font-size: 1em;
+    margin: 0 6px;
+  }
+  .main_dark #pos_tus p {
+    margin: 2px 6px;
+  }
+  .main_dark #pos_tus p button {
+    background-color: white;
+    border: 2px solid #001D6E;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 0 3px;
+  }
+  .main_dark #pos_tus p :hover {
+    background-color: rgb(49, 8, 123);
+    color: white;
+  }
+  .main_dark #title_tus {
+    text-align: center;
+  }
+  .main_dark #title_tus h1 {
+    font-family: "Dancing Script", cursive;
+    font-weight: 900;
+    font-size: 3em;
+    color: rgb(255, 194, 60);
+  }
+  .main_dark .introduce.-contentIntro h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(250, 47, 181);
+  }
+  .main_dark .introduce.-contentIntro h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20px;
+    color: rgba(5, 255, 5, 0.875);
+  }
+  .main_dark .introduce.-contentIntro p {
+    font-family: "verdana";
+    font-size: 1em;
+  }
+  .main_dark .introduce.-contentIntro #line {
+    border: 0.5px solid #001D6E;
+    width: 80%;
+  }
+  .main_dark .introduce.-contentIntro #insert1 {
+    display: block;
+  }
+  .main_dark .introduce.-contentIntro #insert1 #pic1 {
+    padding: 0;
+    text-align: center;
+  }
+  .main_dark .introduce.-contentIntro #insert1 #pic1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .main_dark .introduce.-contentIntro #insert1 #pic1 p {
+    font-family: "Dancing Script", cursive;
+    color: rgb(250, 47, 181);
+    font-size: 20px;
+  }
+  .main_dark .introduce.-contentIntro #insert2 {
+    display: block;
+  }
+  .main_dark .introduce.-contentIntro #insert2 #video1 {
+    padding: 0;
+  }
+  .main_dark .introduce.-contentIntro #insert2 #video1 iframe {
+    width: 100%;
+    height: 210px;
+    border-radius: 10px;
+  }
+  .main_dark .introduce.-contentIntro #insert2 #video1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .main_dark .introduce.-contentIntro #insert2 #video1 p {
+    font-family: "Dancing Script", cursive;
+    color: rgb(250, 47, 181);
+    font-size: 20px;
+  }
+  .main_dark .introduce.-contentIntro #insert2 #video1 p a {
+    text-decoration: none;
+    color: rgb(250, 47, 181);
+  }
+  .main_dark .introduce.-contentIntro #insert3 {
+    display: block;
+  }
+  .main_dark .introduce.-contentIntro #insert3 #pic2 {
+    padding: 0;
+    text-align: center;
+  }
+  .main_dark .introduce.-contentIntro #insert3 #pic2 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .main_dark .introduce.-contentIntro #insert3 #pic2 p {
+    font-family: "Dancing Script", cursive;
+    color: rgb(250, 47, 181);
+    font-size: 20px;
+  }
+  .main_dark .introduce.-contentIntro #insert4 {
+    display: block;
+  }
+  .main_dark .introduce.-contentIntro #insert4 #pic3 {
+    padding: 0;
+    text-align: center;
+  }
+  .main_dark .introduce.-contentIntro #insert4 #pic3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .main_dark .introduce.-contentIntro #insert4 #pic3 p {
+    font-family: "Dancing Script", cursive;
+    color: rgb(250, 47, 181);
     font-size: 20px;
   }
   footer {
