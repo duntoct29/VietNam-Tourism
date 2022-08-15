@@ -68,5 +68,14 @@ main {
   transition: all 5s ease-in-out;
   margin: 0 10em;
 }
+main #title_tus {
+  text-align: center;
+}
+main #title_tus h1 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 900;
+  font-size: 4.5em;
+  color: #001D6E;
+}
 
 /*# sourceMappingURL=style.css.map */

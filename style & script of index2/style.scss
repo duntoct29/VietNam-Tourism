@@ -39,7 +39,7 @@ header{
                 padding: 10px;
                a{
                 text-decoration: none;
-                font-family: $font2;
+                font-family: $font2b;
                 font-weight: 900;
                 font-size: 1.8em;
                 color: $ColorText;
@@ -58,4 +58,14 @@ header{
 main{
     transition: all 5s ease-in-out;
     margin: 0 10em;
+        #title_tus{
+            h1{
+             font-family:$font2b;
+             font-weight: 900;
+             font-size: 4.5em;
+             color: $colorBgr;
+         }
+           text-align: center;
+          
+         }
 }
