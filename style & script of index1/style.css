@@ -7,7 +7,7 @@
 body, html {
   width: 100%;
   min-height: 100%;
-  transition: all 3s ease-in-out;
+  transition: all 5s ease-in-out;
 }
 
 body {
@@ -215,7 +215,6 @@ main .introduce.-contentIntro #insert4 #pic3 p {
   color: #001D6E;
   font-size: 25px;
 }
-
 footer {
   background-color: #001D6E;
   width: 100%;
@@ -225,6 +224,7 @@ footer {
 footer #table1 {
   text-align: center;
   flex-basis: 50%;
+  margin: 2em;
 }
 footer #table1 ul {
   list-style: none;
@@ -246,6 +246,7 @@ footer #table1 h1 {
 footer #table2 {
   flex-basis: 50%;
   text-align: center;
+  margin: 2em;
 }
 footer #table2 ul {
   list-style: none;
@@ -448,6 +449,7 @@ footer #table2 h1 {
   footer #table1 {
     text-align: left;
     flex-basis: 50%;
+    margin: 0;
   }
   footer #table1 ul {
     list-style: none;
@@ -468,7 +470,8 @@ footer #table2 h1 {
   }
   footer #table2 {
     flex-basis: 50%;
-    text-align: center;
+    text-align: right;
+    margin: 0;
   }
   footer #table2 ul {
     list-style: none;

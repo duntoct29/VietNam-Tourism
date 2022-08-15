@@ -7,7 +7,7 @@
 body,html{
     width: 100%;
     min-height: 100%;
-    transition: all 3s ease-in-out;
+    transition: all 5s ease-in-out;
 }
 body{overflow-x: hidden;}
 body::-webkit-scrollbar{width: 10px;}
@@ -15,7 +15,6 @@ body::-webkit-scrollbar-thumb{
         background:linear-gradient(45deg,#001D6E,rgb(250, 47, 181));
         border-radius: 20px;
     }
-
 .permanentNav{
     position:fixed;
     top:0;
@@ -218,6 +217,7 @@ footer{
     #table1{
         text-align: center;
         flex-basis: 50%;
+        margin: 2em;
         ul{
             list-style: none;
             li{
@@ -239,6 +239,7 @@ footer{
     #table2{
         flex-basis: 50%;
         text-align: center;
+        margin: 2em;
         ul{
             list-style: none;
             li{
@@ -442,6 +443,7 @@ footer{
         #table1{
             text-align: left;
             flex-basis: 50%;
+            margin: 0;
             ul{
                 list-style: none;
                 li{
@@ -462,7 +464,8 @@ footer{
         }
         #table2{
             flex-basis: 50%;
-            text-align: center;
+            text-align: right;
+            margin: 0;
             ul{
                 list-style: none;
                 li{
