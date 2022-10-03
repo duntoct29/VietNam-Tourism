@@ -16,7 +16,7 @@ $(document).ready(function(){
         $('#suggest').css({'display':'none'});
     });
     $('#logo_page').click(()=>{
-       stopMusic();
+       stopMusic(); 
     });
     $(window).scroll(()=>{
         var pos=$(this).scrollTop();
@@ -34,6 +34,7 @@ $(document).ready(function(){
         stopMusic();
         $('#suggest').css({'display':'block'});
    });
+
    var value_circle = 2;
    $('#darkMode').click(()=>{
             if(value_circle%2==0){
